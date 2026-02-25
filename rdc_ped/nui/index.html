@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Dream City - Ped Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="ped-menu-container">
+        <div id="ped-menu" class="menu">
+            <!-- Header Section -->
+            <div class="header">
+                <h1>Red Dream City <span style="color: #FF4444;">Ped Menu</span></h1>
+                <div class="user-info">
+                    <span id="welcome-text">Welcome, <span id="player-name">Player</span></span>
+                    <span id="permission-tier" class="badge">Tier: <span id="tier-value">User</span></span>
+                </div>
+            </div>
+            
+            <!-- Controls Section -->
+            <div class="controls">
+                <input type="text" id="search-input" placeholder="Search peds...">
+                <div class="category-filters" id="category-filters">
+                    <!-- Categories will be populated dynamically -->
+                </div>
+            </div>
+            
+            <!-- Stats Section -->
+            <div class="stats">
+                <div class="stat-box">
+                    <span class="stat-label">Total Peds</span>
+                    <span class="stat-value" id="total-peds-count">0</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Categories</span>
+                    <span class="stat-value" id="categories-count">0</span>
+                </div>
+            </div>
+            
+            <!-- Ped List Container -->
+            <div class="ped-list-container">
+                <div class="ped-list" id="ped-list">
+                    <!-- Ped items will be populated dynamically -->
+                </div>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button id="reset-btn" class="btn btn-danger">Reset to Default</button>
+                <button id="close-btn" class="btn btn-secondary">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
